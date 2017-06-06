@@ -5,7 +5,7 @@
 <head>
     <title>WebChat | 聊天</title>
     <jsp:include page="include/commonfile.jsp"/>
-    <script src="${ctx}/plugins/sockjs/sockjs.js"></script>
+    <script src="${ctx}/static/plugins/sockjs/sockjs.js"></script>
 </head>
 <body>
 <jsp:include page="include/header.jsp"/>
@@ -16,7 +16,7 @@
     <div class="admin-content">
         <div class="" style="width: 80%;float:left;">
             <!-- 聊天区 -->
-            <div class="am-scrollable-vertical" id="chat-view" style="height: 510px;">
+            <div class="am-scrollable-vertical" id="chat-view" style="height: 70%;">
                 <ul class="am-comments-list am-comments-list-flip" id="chat">
                 </ul>
             </div>
