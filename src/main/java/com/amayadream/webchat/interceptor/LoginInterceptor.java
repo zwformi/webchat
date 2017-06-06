@@ -35,7 +35,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
         if(session != null && session.getAttribute("login_status") != null){
             return true;
         }else{
-            response.sendRedirect("/user/login?timeout=true");
+            response.sendRedirect("/user/login.do?timeout=true");
             return false;
         }
     }

@@ -1,11 +1,5 @@
 package com.amayadream.webchat.listener;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.sql.*;
-import java.util.Properties;
-
 import org.apache.commons.dbcp.ConnectionFactory;
 import org.apache.commons.dbcp.DriverManagerConnectionFactory;
 import org.apache.commons.dbcp.PoolableConnectionFactory;
@@ -13,6 +7,12 @@ import org.apache.commons.dbcp.PoolingDriver;
 import org.apache.commons.pool.ObjectPool;
 import org.apache.commons.pool.impl.GenericObjectPool;
 import org.junit.Test;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.*;
+import java.util.Properties;
 
 /**
  * @author :  Amayadream
@@ -22,7 +22,7 @@ public class PoolManager {
     private static String driver = "com.mysql.jdbc.Driver";
     private static String url = "jdbc:mysql://127.0.0.1:3306/webchat?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC";
     private static String Name = "root";
-    private static String Password = "root";
+    private static String Password = "123456";
 
     private static Class driverClass = null;
     private static ObjectPool connectionPool = null;

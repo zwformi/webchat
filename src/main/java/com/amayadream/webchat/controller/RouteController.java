@@ -14,7 +14,7 @@ public class RouteController {
 
     @RequestMapping(value = "")
     public String index() {
-        return "redirect:/user/login";
+        return "redirect:/user/login.do";
     }
 
     @RequestMapping(value = "/about")

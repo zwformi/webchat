@@ -58,7 +58,7 @@ public class LoginController {
                     user.setLasttime(date.getTime24());
                     userService.update(user);
                     attributes.addFlashAttribute("message", defined.LOGIN_SUCCESS);
-                    return "redirect:/chat";
+                    return "redirect:/chat.do";
                 }
             }
         }
